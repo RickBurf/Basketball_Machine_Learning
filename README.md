@@ -1,2 +1,6 @@
 # Basketball_Machine_Learning
-This Repository uses R's Machine learning packages to produce probabilities for NBL (National Basketball League) matches
+This Repository uses R's Machine learning packages to produce probabilities for NBL (National Basketball League) matches. In November 2024, I built a machine-learning model using R's XGBoost package. The model looks at the team's recent form using an ELO Ranking model to rank teams based on their past performances effectively. The model also took in box score data over the team's past five matches as well as the match odds for a game, this was done as a way for the system to take into account player injury and team news. This was purely a personal learning project to develop my skills in R and gain a greater understanding of machine learning and its practical uses.
+
+In the code the dataframe named "nbl_betting_odds" is a list of odds for NBL matches from 2009 to present; a copy of this can be found at https://www.aussportsbetting.com/data/historical-nbl-results-and-odds-data/. 
+
+To run this code with the R file I have created the second row needs to be removed and the column names need to match those used in "Nbl_Predict_Using_Odds.R". The next step is to import the dataset in R and select the import Excel file option. The name of the data frame will need to be "nbl_betting_odds" to be able to run the code smoothly.
